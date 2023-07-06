@@ -10,7 +10,7 @@ const ImageViewer = ({image,selectedImage}) => {
 const styles = StyleSheet.create({
   image: {
     width: 320,
-    height: "100%",
+    height: 440,
     borderRadius: 18,
   },
 });
