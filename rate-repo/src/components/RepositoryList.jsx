@@ -27,7 +27,7 @@ const repositories = [
   {
     id: "django.django",
     fullName: "django/django",
-    description: "The Web framework for perfectionists with deadlines.",
+    description: "The Web framework for perfectionists with deadlines",
     language: "Python",
     forksCount: 21015,
     stargazersCount: 48496,
