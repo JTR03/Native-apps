@@ -1,23 +1,33 @@
-import {View, StyleSheet,Text} from 'react-native'
-import Constants from 'expo-constants'
-
+import { View, StyleSheet, ScrollView } from "react-native";
+import Constants from "expo-constants";
+import { Link } from "react-router-native";
+import Text from "./Text";
 
 const AppBar = () => {
   return (
     <View style={styles.container}>
-        <Text style={styles.text}>Rate Repo</Text>
+      <ScrollView horizontal>
+        <Link to="/">
+          <Text color={"primary"} style={styles.text}>Repositories</Text>
+        </Link>
+        <Link to={"/signin"}>
+          <Text color={"primary"} style={styles.text}>Sign In</Text>
+        </Link>
+      </ScrollView>
     </View>
-  )
-}
+  );
+};
 
 const styles = StyleSheet.create({
-    container: {
-        paddingTop: Constants.statusBarHeight,
-        backgroundColor:'#24292e'
-    },
-    text:{
-        color: 'white'
-    }
-})
+  container: {
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: "#24292e",
+    display: "flex",
+    flexDirection: "row",
+  },
+  text: {
+    padding: 10,
+  },
+});
 
-export default AppBar
+export default AppBar;
