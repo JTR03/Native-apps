@@ -6,6 +6,7 @@ const Text = ({ color, heading, style, ...props }) => {
     styles.text,
     color === "secondary" && styles.textSecondary,
     color === "primary" && styles.primaryColor,
+
     heading && styles.heading,
     style,
   ];

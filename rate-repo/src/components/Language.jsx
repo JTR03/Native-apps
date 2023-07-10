@@ -1,5 +1,6 @@
 import React from 'react'
 import { View,Text,StyleSheet } from 'react-native'
+import theme from '../theme';
 
 const Language = ({language}) => {
   return (
@@ -11,10 +12,9 @@ const Language = ({language}) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#0366d6",
+    backgroundColor: theme.colors.accent,
     padding: 10,
     borderRadius: 5,
-    flexGrow: 0,
   },
   text:{
     color: 'white',
