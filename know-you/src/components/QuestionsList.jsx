@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import Text from "./Text";
 import QuestionItem from "./QuestionItem";
+import AppBar from "./AppBar";
 const src = require("../../assets/images/back.jpg");
 
 const QuestionsList = () => {

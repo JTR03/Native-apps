@@ -1,10 +1,12 @@
 import {View, StyleSheet, Pressable} from 'react-native'
 import Text from './Text'
 import theme from '../theme'
+import AppBar from './AppBar'
 
 const Home = () => {
   return (
     <View style={styles.container}>
+      <AppBar label={'Explore'}/>
         <Text type={'heading'}>Welcome to App Name</Text>
         <Pressable style={styles.btnContainer}>
           <Text type={'button'}>Sign In</Text>
