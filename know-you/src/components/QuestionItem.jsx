@@ -1,4 +1,4 @@
-import { View, StyleSheet, Pressable, Dimensions, Image } from "react-native";
+import { View, StyleSheet, Pressable, Dimensions } from "react-native";
 import theme from "../theme";
 import Text from "./Text";
 const { width, height } = Dimensions.get("screen");

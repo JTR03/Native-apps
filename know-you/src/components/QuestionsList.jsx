@@ -2,37 +2,19 @@ import { useRef, useState } from "react";
 import {
   View,
   StyleSheet,
-  Pressable,
   FlatList,
-  ImageBackground,
   Image,
 } from "react-native";
 import Text from "./Text";
 import QuestionItem from "./QuestionItem";
 import AppBar from "./AppBar";
 const src = require("../../assets/images/back.jpg");
+import { questions } from "../data";
 
 const QuestionsList = () => {
   const [answers, setAnswere] = useState([]);
   const listRef = useRef(null);
-  const questions = [
-    {
-      id: 1,
-      question: "Question 1 is very long",
-      options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    },
-    {
-      id: 2,
-      question: "Question 2",
-      options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    },
-    {
-      id: 3,
-      question: "Question 3",
-      options: ["Option 1", "Option 2", "Option 3", "Option 4"],
-    },
-  ];
-
+ 
   const handleAnswer = (selectedOption) => {
     const id = questions[answers.length].id;
     setAnswere([...answers, { questionId: id, answer: selectedOption }]);
