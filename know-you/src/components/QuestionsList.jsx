@@ -12,18 +12,26 @@ const src = require("../../assets/images/back.jpg");
 import { questions } from "../data";
 
 const QuestionsList = () => {
-  const [answers, setAnswere] = useState([]);
+  const [answers, setAnswers] = useState([]);
   const listRef = useRef(null);
  
   const handleAnswer = (selectedOption) => {
-    const id = questions[answers.length].id;
-    setAnswere([...answers, { questionId: id, answer: selectedOption }]);
-    console.log(id, questions[answers.length].question);
+    const options = questions.Affection.map(q => q.options)[answers.length];
+    console.log(
+      selectedOption
+    );
+    setAnswers([
+      ...answers,
+      Object.keys(options).find(
+        (a) => options[a] === selectedOption
+      ),
+    ]);
+    console.log(answers);
     handleNext();
   };
 
   const handleNext = () => {
-    if (answers.length < questions.length - 1) {
+    if (answers.length < questions.Affection.length - 1) {
       listRef.current.scrollToIndex({ index: answers.length + 1 });
     }
   };
@@ -38,7 +46,7 @@ const QuestionsList = () => {
       </View>
       <FlatList
         ref={listRef}
-        data={questions}
+        data={questions.Affection}
         renderItem={({ item }) => (
           <QuestionItem questions={item} answer={handleAnswer} />
         )}

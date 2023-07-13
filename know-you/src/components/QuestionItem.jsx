@@ -7,8 +7,8 @@ const QuestionItem = ({ questions, answer }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.question}>{questions.question}</Text>
-      {questions.options.map((option) => (
-        <Pressable key={option} style={styles.option} onPress={answer}>
+      {Object.values(questions.options).map((option) => (
+        <Pressable key={option} style={styles.option} onPress={()=>answer(option)}>
           <Text style={styles.option}>{option}</Text>
         </Pressable>
       ))}
