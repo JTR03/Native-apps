@@ -1,302 +1,293 @@
-export const questions = {
-  Affection: [
-    {
-      id: 1,
-      question:
-        "Indicate how much you need affection by circling the appropriate number",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+export const questions = [
+  {
+    id: 1,
+    category: "Affection",
+    question:
+      "Indicate how much you need affection by circling the appropriate number",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 2,
+    category: "Affection",
+    question:
+      "If or when your spouse is not affectionate with you, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to be shown affection",
     },
-    {
-      id: 2,
-      question:
-        "If or when your spouse is not affectionate with you, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to be shown affection",
-      },
+  },
+  {
+    id: 3,
+    category: "Affection",
+    question: "If or when your spouse is affectionate to you, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to be shown affection",
     },
-    {
-      id: 3,
-      question:
-        "If or when your spouse is affectionate to you, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to be shown affection",
-      },
+  },
+
+  {
+    id: 9,
+    question:
+      " Indicate how much you need sexual fulfillment by circling the appropriate number",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 10,
+    question:
+      "If or when your spouse is not willing to engage in sexual relations with you, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to engage in sexual relations",
     },
-  ],
-  "Sexual Fulfullment": [
-    {
-      id: 9,
-      question:
-        " Indicate how much you need sexual fulfillment by circling the appropriate number",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 11,
+    question:
+      "If or when your spouse engages in sexual relations with you, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to engage in sexual relations",
     },
-    {
-      id: 10,
-      question:
-        "If or when your spouse is not willing to engage in sexual relations with you, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to engage in sexual relations",
-      },
+  },
+
+  {
+    id: 17,
+    question:
+      "Indicate how much you need intimate conversation by circling the appropriate number.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 18,
+    question:
+      "If or when your spouse is not willing to talk with you, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to talk",
     },
-    {
-      id: 11,
-      question:
-        "If or when your spouse engages in sexual relations with you, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to engage in sexual relations",
-      },
+  },
+  {
+    id: 19,
+    question: "If or when your spouse talks to you, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to talk",
     },
-  ],
-  Conversation: [
-    {
-      id: 17,
-      question:
-        "Indicate how much you need intimate conversation by circling the appropriate number.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+
+  {
+    id: 25,
+    question:
+      "Indicate how much you need recreational companionship by circling the appropriate number.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 26,
+    question:
+      "If or when your spouse is not willing to join you in recreational activities,how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to include my spouse",
     },
-    {
-      id: 18,
-      question:
-        "If or when your spouse is not willing to talk with you, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to talk",
-      },
+  },
+  {
+    id: 27,
+    question:
+      "If or when your spouse joins you in recreational activities, how do you feel? ",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to include my spouse",
     },
-    {
-      id: 19,
-      question: "If or when your spouse talks to you, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to talk",
-      },
+  },
+
+  {
+    id: 33,
+    question:
+      "Indicate how much you need honesty and openness by circling the appropriate number.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 34,
+    question:
+      "If or when your spouse is not open and honest with you, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy that my spouse isn't honest and open",
     },
-  ],
-  "Recreational Activitity": [
-    {
-      id: 25,
-      question:
-        "Indicate how much you need recreational companionship by circling the appropriate number.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 35,
+    question:
+      "If or when your spouse is open and honest with you, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy that my spouse is honest and open",
     },
-    {
-      id: 26,
-      question:
-        "If or when your spouse is not willing to join you in recreational activities,how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to include my spouse",
-      },
+  },
+
+  {
+    id: 39,
+    question:
+      "Indicate how much you need physical attractiveness by circling the appropriate number.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 40,
+    question:
+      "If or when your spouse is not willing to make the most of his or her physical attractiveness, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy he or she does not make an effort",
     },
-    {
-      id: 27,
-      question:
-        "If or when your spouse joins you in recreational activities, how do you feel? ",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to include my spouse",
-      },
+  },
+  {
+    id: 41,
+    question:
+      "When your spouse makes the most of his or her physical attractiveness, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to see that he or she makes an effort",
     },
-  ],
-  "Honesty and Openness": [
-    {
-      id: 33,
-      question:
-        "Indicate how much you need honesty and openness by circling the appropriate number.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+
+  {
+    id: 45,
+    question:
+      "Provision of the financial resources to house, feed, and clothe your family at a standard of living acceptable to you, but avoiding travel and working hours that are unacceptable to you.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 46,
+    question:
+      "If or when your spouse is not willing to support you financially, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to be financially supported",
     },
-    {
-      id: 34,
-      question:
-        "If or when your spouse is not open and honest with you, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy that my spouse isn't honest and open",
-      },
+  },
+  {
+    id: 47,
+    question:
+      "If or when your spouse supports you financially, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to be financially supported",
     },
-    {
-      id: 35,
-      question:
-        "If or when your spouse is open and honest with you, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy that my spouse is honest and open",
-      },
+  },
+
+  {
+    id: 52,
+    question:
+      "Indicate how much you need domestic support by circling the appropriate number",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 53,
+    question:
+      "If your spouse is not willing to provide you with domestic support, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to have domestic support",
     },
-  ],
-  "Physical Attractiveness": [
-    {
-      id: 39,
-      question:
-        "Indicate how much you need physical attractiveness by circling the appropriate number.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 54,
+    question:
+      "If or when your spouse provides you with domestic support, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to have domestic support",
     },
-    {
-      id: 40,
-      question:
-        "If or when your spouse is not willing to make the most of his or her physical attractiveness, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy he or she does not make an effort",
-      },
+  },
+
+  {
+    id: 59,
+    question:
+      "Indicate how much you need family commitment by circling the appropriate number.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 60,
+    question:
+      "If or when your spouse is not willing to provide family commitment, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy he or she is not involved",
     },
-    {
-      id: 41,
-      question:
-        "When your spouse makes the most of his or her physical attractiveness, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to see that he or she makes an effort",
-      },
+  },
+  {
+    id: 61,
+    question:
+      "If or when your spouse provides family commitment, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy he or she is involved in the family",
     },
-  ],
-  "Finacial Support": [
-    {
-      id: 45,
-      question:
-        "Provision of the financial resources to house, feed, and clothe your family at a standard of living acceptable to you, but avoiding travel and working hours that are unacceptable to you.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+
+  {
+    id: 67,
+    question:
+      "Indicate how much you need admiration by circling the appropriate number.",
+    options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
+  },
+  {
+    id: 68,
+    question: "If or when your spouse does not admire you, how do you feel?",
+    options: {
+      6: "Very unhappy",
+      3: "Somewhat unhappy",
+      1: "Neither happy nor unhappy",
+      0: "Happy not to be admired",
     },
-    {
-      id: 46,
-      question:
-        "If or when your spouse is not willing to support you financially, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to be financially supported",
-      },
+  },
+  {
+    id: 69,
+    question: "If or when your spouse does admire you, how do you feel?",
+    options: {
+      6: "Very happy",
+      3: "Somewhat happy",
+      1: "Neither happy nor unhappy",
+      0: "Unhappy to be admired",
     },
-    {
-      id: 47,
-      question:
-        "If or when your spouse supports you financially, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to be financially supported",
-      },
-    },
-  ],
-  "Domestic Support": [
-    {
-      id: 52,
-      question:
-        "Indicate how much you need domestic support by circling the appropriate number",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
-    },
-    {
-      id: 53,
-      question:
-        "If your spouse is not willing to provide you with domestic support, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to have domestic support",
-      },
-    },
-    {
-      id: 54,
-      question:
-        "If or when your spouse provides you with domestic support, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to have domestic support",
-      },
-    },
-  ],
-  "Family Commitment": [
-    {
-      id: 59,
-      question:
-        "Indicate how much you need family commitment by circling the appropriate number.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
-    },
-    {
-      id: 60,
-      question:
-        "If or when your spouse is not willing to provide family commitment, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy he or she is not involved",
-      },
-    },
-    {
-      id: 61,
-      question:
-        "If or when your spouse provides family commitment, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy he or she is involved in the family",
-      },
-    },
-  ],
-  Admiration: [
-    {
-      id: 67,
-      question:
-        "Indicate how much you need admiration by circling the appropriate number.",
-      options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
-    },
-    {
-      id: 68,
-      question: "If or when your spouse does not admire you, how do you feel?",
-      options: {
-        6: "Very unhappy",
-        3: "Somewhat unhappy",
-        1: "Neither happy nor unhappy",
-        0: "Happy not to be admired",
-      },
-    },
-    {
-      id: 69,
-      question: "If or when your spouse does admire you, how do you feel?",
-      options: {
-        6: "Very happy",
-        3: "Somewhat happy",
-        1: "Neither happy nor unhappy",
-        0: "Unhappy to be admired",
-      },
-    },
-  ],
-};
+  },
+];
 
 const partner = {
   Admiration: [
