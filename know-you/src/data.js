@@ -32,12 +32,14 @@ export const questions = [
 
   {
     id: 9,
+    category: "Sexual fulfillment",
     question:
       " Indicate how much you need sexual fulfillment by circling the appropriate number",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 10,
+    category: "Sexual fulfillment",
     question:
       "If or when your spouse is not willing to engage in sexual relations with you, how do you feel?",
     options: {
@@ -49,6 +51,7 @@ export const questions = [
   },
   {
     id: 11,
+    category: "Sexual fulfillment",
     question:
       "If or when your spouse engages in sexual relations with you, how do you feel?",
     options: {
@@ -61,12 +64,14 @@ export const questions = [
 
   {
     id: 17,
+    category: "Intimate conversation",
     question:
       "Indicate how much you need intimate conversation by circling the appropriate number.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 18,
+    category: "Intimate conversation",
     question:
       "If or when your spouse is not willing to talk with you, how do you feel?",
     options: {
@@ -78,6 +83,7 @@ export const questions = [
   },
   {
     id: 19,
+    category: "Intimate conversation",
     question: "If or when your spouse talks to you, how do you feel?",
     options: {
       6: "Very happy",
@@ -89,12 +95,14 @@ export const questions = [
 
   {
     id: 25,
+    category: "Recreational companionship",
     question:
       "Indicate how much you need recreational companionship by circling the appropriate number.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 26,
+    category: "Recreational companionship",
     question:
       "If or when your spouse is not willing to join you in recreational activities,how do you feel?",
     options: {
@@ -106,6 +114,7 @@ export const questions = [
   },
   {
     id: 27,
+    category: "Recreational companionship",
     question:
       "If or when your spouse joins you in recreational activities, how do you feel? ",
     options: {
@@ -118,12 +127,15 @@ export const questions = [
 
   {
     id: 33,
+    category: "Honesty and openness",
+
     question:
       "Indicate how much you need honesty and openness by circling the appropriate number.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 34,
+    category: "Honesty and openness",
     question:
       "If or when your spouse is not open and honest with you, how do you feel?",
     options: {
@@ -135,6 +147,7 @@ export const questions = [
   },
   {
     id: 35,
+    category: "Honesty and openness",
     question:
       "If or when your spouse is open and honest with you, how do you feel?",
     options: {
@@ -147,12 +160,14 @@ export const questions = [
 
   {
     id: 39,
+    category: "Physical attractiveness",
     question:
       "Indicate how much you need physical attractiveness by circling the appropriate number.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 40,
+    category: "Physical attractiveness",
     question:
       "If or when your spouse is not willing to make the most of his or her physical attractiveness, how do you feel?",
     options: {
@@ -164,6 +179,7 @@ export const questions = [
   },
   {
     id: 41,
+    category: "Physical attractiveness",
     question:
       "When your spouse makes the most of his or her physical attractiveness, how do you feel?",
     options: {
@@ -176,12 +192,14 @@ export const questions = [
 
   {
     id: 45,
+    category: "Financial support",
     question:
       "Provision of the financial resources to house, feed, and clothe your family at a standard of living acceptable to you, but avoiding travel and working hours that are unacceptable to you.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 46,
+    category: "Financial support",
     question:
       "If or when your spouse is not willing to support you financially, how do you feel?",
     options: {
@@ -193,6 +211,7 @@ export const questions = [
   },
   {
     id: 47,
+    category: "Financial support",
     question:
       "If or when your spouse supports you financially, how do you feel?",
     options: {
@@ -205,12 +224,14 @@ export const questions = [
 
   {
     id: 52,
+    category: "Domestic support",
     question:
       "Indicate how much you need domestic support by circling the appropriate number",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 53,
+    category: "Domestic support",
     question:
       "If your spouse is not willing to provide you with domestic support, how do you feel?",
     options: {
@@ -222,6 +243,7 @@ export const questions = [
   },
   {
     id: 54,
+    category: "Domestic support",
     question:
       "If or when your spouse provides you with domestic support, how do you feel?",
     options: {
@@ -234,12 +256,15 @@ export const questions = [
 
   {
     id: 59,
+    category: "Family commitment",
+
     question:
       "Indicate how much you need family commitment by circling the appropriate number.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 60,
+    category: "Family commitment",
     question:
       "If or when your spouse is not willing to provide family commitment, how do you feel?",
     options: {
@@ -251,6 +276,7 @@ export const questions = [
   },
   {
     id: 61,
+    category: "Family commitment",
     question:
       "If or when your spouse provides family commitment, how do you feel?",
     options: {
@@ -263,12 +289,14 @@ export const questions = [
 
   {
     id: 67,
+    category: "Admiration",
     question:
       "Indicate how much you need admiration by circling the appropriate number.",
     options: { 0: 0, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6 },
   },
   {
     id: 68,
+    category: "Admiration",
     question: "If or when your spouse does not admire you, how do you feel?",
     options: {
       6: "Very unhappy",
@@ -279,6 +307,7 @@ export const questions = [
   },
   {
     id: 69,
+    category: "Admiration",
     question: "If or when your spouse does admire you, how do you feel?",
     options: {
       6: "Very happy",

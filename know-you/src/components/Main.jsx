@@ -1,9 +1,9 @@
 import { View, StyleSheet, Image } from "react-native";
 import Home from "./Home";
-import AppBar from "./AppBar";
 import { Routes, Route } from "react-router-native";
 import QuestionsList from "./QuestionsList";
 import Tabs from "./Tabs";
+import Results from "./Results";
 
 const Main = () => {
   return (
@@ -11,6 +11,7 @@ const Main = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/questions" element={<QuestionsList />} />
+        <Route path="/results" element={<Results/>} />
       </Routes>
       <Tabs />
     </View>

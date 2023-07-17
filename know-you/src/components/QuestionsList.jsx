@@ -1,18 +1,19 @@
 import { useRef, useState } from "react";
 import { View, StyleSheet, FlatList, Image } from "react-native";
-import Text from "./Text";
 import QuestionItem from "./QuestionItem";
-import AppBar from "./AppBar";
 const src = require("../../assets/images/back.jpg");
 import { questions } from "../data";
+import { useNavigate } from "react-router-native";
+import Results from "./Results";
 
 const QuestionsList = () => {
+  const navigate = useNavigate();
   const [answers, setAnswers] = useState([]);
+  const [finish, setFinish] = useState(false)
   const listRef = useRef(null);
 
   const handleAnswer = (selectedOption) => {
     const obj = questions.map((q) => q)[answers.length];
-    console.log(obj);
     setAnswers([
       ...answers,
       {
@@ -25,22 +26,69 @@ const QuestionsList = () => {
         ans: selectedOption,
       },
     ]);
-    console.log(answers);
     handleNext();
   };
 
   const handleNext = () => {
-    if (answers.length < 3) {
+    if (answers.length < 5) {
       listRef.current.scrollToIndex({ index: answers.length + 1 });
     } else {
-      calculate();
+      setFinish(true)
+      const needs = calculate()
+      console.log(needs);
     }
   };
   const calculate = () => {
-    let affection = 0;
-    answers.map((a) =>
-      a.cat === "Affection" ? (affection += a.score) : console.log(affection)
-    );
+    const needs = {
+      Affection: 0,
+      "Domestic support": 0,
+      "Financial support": 0,
+      "Physical attractiveness": 0,
+      "Honesty and openness": 0,
+      "Recreational companionship": 0,
+      "Intimate conversation": 0,
+      "Sexual fulfillment": 0,
+      "Family commitment": 0,
+      Admiration: 0,
+    };
+    answers.map((a) => {
+      switch (a.cat) {
+        case "Affection":
+          needs["Affection"] += a.score;
+          break;
+        case "Admiration":
+          needs["Admiration"] += a.score;
+          break;
+        case "Domestic support":
+          needs["Domestic support"] += a.score;
+          break;
+        case "Family commitment":
+          needs["Family commitment"] += a.score;
+          break;
+        case "Sexual fulfillment":
+          needs["Sexual fulfillment"] += a.score;
+          break;
+        case "Intimate conversation":
+          needs["Intimate conversation"] += a.score;
+          break;
+        case "Recreational companionship":
+          needs["Recreational companionship"] += a.score;
+          break;
+        case "Honesty and openness":
+          needs["Honesty and openness"] += a.score;
+          break;
+        case "Physical attractiveness":
+          needs["Physical attractiveness"] += a.score;
+          break;
+        case "Domestic support":
+          needs["Domestic support"] += a.score;
+          break;
+        default:
+          break;
+      }
+    });
+    const sortNeeds = Object.entries(needs).sort((a, b) => b[1] - a[1]);
+    return sortNeeds.map(([n]) => n);
   };
   return (
     <View style={styles.container}>
@@ -51,7 +99,7 @@ const QuestionsList = () => {
           blurRadius={5}
         />
       </View>
-      <FlatList
+      {finish ?  <Results />:<FlatList
         ref={listRef}
         data={questions}
         renderItem={({ item }) => (
@@ -62,7 +110,7 @@ const QuestionsList = () => {
         pagingEnabled={true}
         scrollEnabled={false}
         showsHorizontalScrollIndicator={false}
-      />
+      /> }
     </View>
   );
 };
